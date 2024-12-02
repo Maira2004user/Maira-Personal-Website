@@ -1,0 +1,153 @@
+<html>
+<head>
+  <title>Gallery</title>
+  <link rel="stylesheet" type= "text/css" href= "Index.css">
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;  }
+
+  #main-content {
+    flex: 1; 
+  }
+
+  .grid-container {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: #D8BFD8;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #693f5e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #a5506d;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: hotpink;
+  }
+
+  hr {
+    margin: 0px auto;
+    border: 1px solid pink;
+    width: 100%;
+  }
+ </style>
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+  <a href="#" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Index.html"> Main page</a>
+  <a href="Biodata.html"> Biodata</a>
+  <a href="Experience.html">Experience</a>
+  <a href="Education.html">Education</a>
+  <a href="Family.html">Family</a>
+  <a href="Gallery.html">Gallery</a>
+</div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>  
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+  <div id="main-content">
+    <center>
+      <marquee>
+        <h1 style="font-family: Poppins; font-size: 50px; color: #663399;">
+          <b>꧁✧∘* ೃ My Gallery ⋆｡˚. ꧂</b>
+        </h1>
+
+      </marquee>
+    </center>
+
+    <div class="grid-container">
+      <div><img src="Me1.jpg" alt="photo 1" width="400" height="500"></div>
+      <div><img src="Me6.jpg" alt="photo 2" width="400" height="500"></div>
+      <div><img src="Me5.jpg" alt="photo 3" width="400" height="500"></div>
+      <div><img src="Me7.jpg" alt="photo 4" width="300" height="500"></div>
+      <div><img src="Me8.jpg" alt="photo 5" width="300" height="500"></div>
+      <div><img src="Me9.jpg" alt="photo 6" width="300" height="500"></div>
+      <div><img src="Me10.jpg" alt="photo 7" width="400" height="500"></div>
+      <div><img src="Me11.jpg" alt="photo 8" width="400" height="500"></div>
+      <div><img src="Me14.jpg" alt="photo 9" width="400" height="500"></div>
+      <div><img src="Me15.jpg" alt="photo 10" width="400" height="500"></div>
+      <div><img src="Me16.jpg" alt="photo 12" width="400" height="500"></div>
+      <div><img src="Me17.jpg" alt="photo 13" width="400" height="500"></div>
+    </div>
+  </div>
+
+  <footer>
+    <h2 style="background-color:SteelBlue;"><font size="4"color="white"> <b>
+    <center> FOLLOW ME </b> </center> </p>  <font size="5">
+ <center> 
+    <a href="https://www.instagram.com/_nilahumaira/"><img src= "iglogo.png " style="width:40px; height:40px;"></a> 
+    <a href="https://www.tiktok.com/@humaiira3?_t=8rFi9J9JOmw&_r=1"><img src= "TiktokIcon.png " style="width:30px; height:30px;"></a> 
+    <a href="https://x.com/nilahumaira"><img src= "xIcon.png " style="width:50px; height:30px;"></a> </font> 
+ </center> 
+
+<hr size="2" width="100%" color="pink">
+
+<center> <p> © COPYRIGHT <sup> by </sup> NILA HUMAIRA BINTI HANIF.</p> </center>
+</footer>
+</body>
+</html>
+
