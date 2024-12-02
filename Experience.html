@@ -1,0 +1,331 @@
+<html>
+<head>
+  <title> Experience </title>
+  <link rel="stylesheet" type= "text/css" href= "Index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.gallery {
+  border: 2px solid beige;
+}
+
+div.gallery:hover {
+  border: 2px solid #debca3;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color:rgb(255, 242, 226);
+  padding: 20px;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 226, 195);
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.middle {
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button {
+
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: beige ; 
+  color: black; 
+  border: 2px solid black;
+}
+
+.button1:hover {
+  background-color: #debca3;
+  color: white;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+body { 
+background-image: url('bg2.webp');
+  font-family: "Aclonica";
+  background-size :cover;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: beige;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color:rgb(217, 168, 157);
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:rgb(217, 197, 157);
+}
+.responsive {
+  padding: 10px;
+  float: left;
+  width: 24.99999%;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  </style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="#" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Biodata.html" target="_blank"> Biodata</a>
+  <a href="Experience.html">Experience</a>
+  <a href="Education.html">Education</a>
+  <a href="Family.html">Family</a>
+  <a href="Gallery.html">Gallery</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+<div class="header">
+  <h1 style=" color:#d7a382;">MAIRA'S EXPERIENCE</h1>
+  <p>   I may not have formal work experience yet, but I completed a two-month internship that provided me valuable insight and skills. Let me share my wonderful experience! </p> 
+</div>
+
+<div class="topnav">
+<center>
+  <a href="intern1.jpg">CLICK</a>
+  <a href="intern3.jpg">♡</a>
+  <a href="intern6.jpg">HERE</a>
+  <a href="intern9.jpg">♡</a>
+  <a href="intern10.jpg">FOR</a>
+  <a href="intern11.jpg">♡</a>
+  <a href="intern12.jpg">PHOTOS</a>
+  <a href="intern8.jpg">♡</a>
+</center>
+</div>
+
+
+<div class="column middle">
+    <h2>What I do for my 2 months of internship at An-Nur Speacialist Hospital?</h2>
+    <p> During my two months internship, I was assigned to the Information Technology (IT) Department, which consist of the application and technical teams. I had the opportunity to work with both teams, I gained diverse experiences. Early on, I participated in a User Acceptance Test (UAT) project, helping staff evaluate a potential new system by identfying issues, bug and weaknesses. My role involved assisting users in exploring and reviewing the system. I also attended a Hospital Information System (HIS) meeting, where IT staff analyzed a vendor's system presentation to assess its suitability for the hospital.</p>
+    <p> Additionally, I supported the technical team with tasks such as replacing PCs, troubleshooting laptops and AIO computers, fixing printers, checking Anydesk connections, IPTV setups, and updating the Points Of Care (POC) inventory list. Besides, I also assisted in setting up HIS, transferring data, fixing clinic telephones, and learning about servers, networks, and security. Overall, my responsibilities included resolving technical issues, assisting with system setup, reviewing operations, performing data patches, creating pivot tables, and updating inventory reports in Excel. </p> </div> </div>
+
+
+<div class="clearfix"></div>
+<div style="padding:6px;"> </div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<p> <center><button class="button button1"><a href="https://annurspecialisthospital.migh.com.my/">An-nur Website</a></button></center> </p>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="intern7.jpg">
+      <img src="intern7.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">SETUP CHARGE RULE</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="intern4.jpg">
+      <img src="intern4.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">UAT SESSION</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="intern5.jpg">
+      <img src="intern5.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">FORMATTING ACCORDING TO BATCH</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="intern2.jpg">
+      <img src="intern2.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">SETUP NEW PC</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="intern13.jpg">
+      <img src="intern13.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">REVIEW SYSTEM</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="intern14.jpg">
+      <img src="intern14.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">UPDATE LIST FOR PACSYS</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="intern15.jpg">
+      <img src="intern15.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">CHECK POC</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="intern16.jpg">
+      <img src="intern16.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">DATA PATCH</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+<div style="padding:6px;"> </div>
+
+<footer>
+    <h2 style="background-color:SteelBlue;"> <font size="4"color="white"> <b>  
+    <center> FOLLOW ME </b> </center> <font size="5"> 
+<center> 
+     <a href="https://www.instagram.com/_nilahumaira/"><img src= "iglogo.png " style="width:40px; height:40px;"></a> 
+     <a href="https://www.tiktok.com/@humaiira3?_t=8rFi9J9JOmw&_r=1"><img src= "TiktokIcon.png " style="width:30px; height:30px;"></a> 
+     <a href="https://x.com/nilahumaira"><img src= "xIcon.png " style="width:50px; height:30px;"></a> </font>  
+</center> 
+
+<hr size="2" width="100%" color="pink">
+
+<center> <p>  © COPYRIGHT <sup> by </sup> NILA HUMAIRA BINTI HANIF.</p> </center></div> 
+</footer>
+</center>
+</body>
+</html>
+
