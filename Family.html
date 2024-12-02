@@ -1,0 +1,338 @@
+<html>
+<head>
+  <title> Family </title>
+  <link rel="stylesheet" type= "text/css" href= "Index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgb(141, 181, 255);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#B0E0E6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #000080;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0000CD;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: RoyalBlue ;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+body { 
+background-image: url('bg.avif');
+  font-family: "Aclonica";
+  background-size :cover;
+}
+table, th, td {
+  border:1px solid DarkSlateBlue;
+  background: #B0C4DE; 
+  font-family: "Arial";
+  font-size: 20px;
+  padding: 10px;
+  width: 5%;
+  height: 5%;
+  text-align:justify;
+}
+
+img {
+  border-radius: 8px;
+}
+
+  </style>
+</head>
+<body>
+<div id="mySidebar" class="sidebar">
+  <a href="#" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Biodata.html" target="_blank"> Biodata</a>
+  <a href="Experience.html">Experience</a>
+  <a href="Education.html">Education</a>
+  <a href="Family.html">Family</a>
+  <a href="Gallery.html">Gallery</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<center><h1 style="background-color:#E0FFFF;"> <font font-family="poppins" size="50px"color="#191970"><b> 
+
+｡･ﾟ♡ﾟ･｡ MY LOVELY FAMILY ｡･ﾟ♡ﾟ･｡ <b></font></h1></center>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="fam1.jpg" style="width:100%">
+  <div class="text">Genting Highland</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="fam 2.jpg" style="width:100%">
+  <div class="text"> Cameron Highland</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="fam3.jpg" style="width:100%">
+  <div class="text"> Theme park </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"> 4 / 6</div>
+  <img src="fam4.jpg" style="width:100%">
+  <div class="text"> Skyway Genting </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"> 5 / 6</div>
+  <img src="fam5.jpg" style="width:100%">
+  <div class="text"> Pulau Redang</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"> 6 / 6</div>
+  <img src="fam6.jpg" style="width:100%">
+  <div class="text"> Pulau Redang</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<center> <p style="font-size:100%; font-family:arial;" >This is my happy little family. I only have two siblings which is me and my younger brother. I love my family deeply. My mom and dad have always helped and supported me in so many ways, and I am incredibly grateful to be blessed with such caring and loving parents.</p> </center>
+
+
+<center> <table style="width:50%"> </center>
+  <tr>
+    <td> <center> <img src="dad.jpg" style="width:100%" > </center>
+</td>
+    <td> This is my dad. He is my hero and my everything. I love him so much because he always supports me and never says no to my requests, he always ensuring I have what I want and need. Besides, my dad also helps me in so many things and always be there for me. He is a hardworking man, and I am so grateful to have him in my life. </ol>
+  <ul>
+      <font size="4"> <li> <b> Hanif </b> bin Azizan @ Harun </li>
+      <li> He is <b> 48 </b> years old </li>
+      <li> Work as a <b> senior manager </b> in Putrajaya Holdings </li>
+       </font> </ul> 
+<center> <p align="justify"> <h2 style="background-color:white;"><font size="6"color="#509dce"> </font> <h2/> </p> </center>
+ <ol type="i"> </td>
+  </tr>
+  <tr> </td>
+  </tr>
+  <tr>
+    <td><center> <img src="mom.jpg" style="width:100%"> </center>
+</td>
+    <td> This is my mom, my world. She is an incredibly hardworking and strong person. She diligently manages everything, from working to cooking and cleaning. My mom is my everything, and without her by my side, my life would likely be a mess. I love her so much because she constantly supports and educates me. She is my inspiration and the person I look up to the most. </ol>
+  <ul>
+      <font size="4">  <li> <b> Intan </b> Suhidah Binti Othman </li>
+      <li> She is <b> 48 </b> years old </li>
+      <li> Work as a <b> clerk </b> in Sime Darby Plantation </li>
+       </font> </ul> 
+<center> <p align="justify"> <h2 style="background-color:white;"><font size="6"color="#509dce"> </font> <h2/> </p> </center>
+ <ol type="i"> </td>
+  </tr>
+  <tr></td>
+  </tr>
+  <tr>
+    <td> <center> <img src="bro.jpg" style="width:100%"> </center>
+</td>
+    <td> This is my younger brother. He can be annoying at times, but I still love him. Sometimes, he helps me with chores around the house, though there are days when he is lazy and just sleeps all day in his room. Despite that, he is caring and kind person, and I am grateful to have him as my brother. </ol>
+  <ul>
+      <font size="4">  <li> <b> Nazril </b> Haqeem bin Hanif </li>
+      <li> He is <b> 18 </b> years old </li>
+      <li> He is currently <b> studying </b> in KPM Ayer Molek </li>
+       </font> </ul> 
+<center> <p align="justify"> <h2 style="background-color:white;"><font size="6"color="#509dce"> </font> <h2/> </p> </center>
+ <ol type="i"> </td>
+  </tr>
+  <tr> </td>
+  </tr>
+  <tr>
+    <td> <center> <img src="maira.jpg" style="width:100%"> </center>
+</td>
+    <td> This is me. I am a caring and soft-hearted person. I am also an extrovert because I love talking and yapping a lot. Besides my biggest goal and hope is to make my parents proud, I want them to see my sucess and know that all their sacrifies were worth it. I dream of being able to repay everything they have done for me.</ol>
+  <ul>
+      <font size="4">  <li> <b> Nila </b> Humaira Binti Hanif </li>
+      <li> I am <b> 20 </b> years old </li>
+      <li> I am a <b> Diploma student </b> in UITM Segamat Johor </li>
+       </font> </ul> 
+<center> <p align="justify"> <h2 style="background-color:white;"><font size="6"color="#509dce"> </font> <h2/> </p> </center>
+ <ol type="i"> </td>
+  </tr>
+  <tr></td>
+  </tr>
+
+</table>
+<footer>
+    <h2 style="background-color:SteelBlue;"><font size="4"color="white"> <b>  
+    <center> FOLLOW ME </b> </center> </p>  <font size="5">
+ <center> 
+    <a href="https://www.instagram.com/_nilahumaira/"><img src= "iglogo.png " style="width:40px; height:40px;"></a> 
+    <a href="https://www.tiktok.com/@humaiira3?_t=8rFi9J9JOmw&_r=1"><img src= "TiktokIcon.png " style="width:30px; height:30px;"></a> 
+    <a href="https://x.com/nilahumaira"><img src= "xIcon.png " style="width:50px; height:30px;"></a> </font>  
+</center> 
+
+<hr size="2" width="100%" color="pink">
+
+<center> <p>  © COPYRIGHT <sup> by </sup> NILA HUMAIRA BINTI HANIF.</p> </center>
+</footer>
+
+
+</center>
+</body>
+</html>
