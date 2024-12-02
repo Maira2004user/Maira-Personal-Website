@@ -1,0 +1,159 @@
+<html>
+<head>
+   <title> Main page </title>
+   <link rel="stylesheet" type= "text/css" href= "Index.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  body { 
+    background-image: url('sky.avif');
+    font-family: "Aclonica";
+    background-size :cover;
+    background-color: MistyRose;
+}
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #693f5e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+  .sidebar a:hover {
+    color: #a5506d;
+}
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+  .openbtn:hover {
+    background-color: hotpink;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+  </style>
+</head>
+<body onload="startTime()">
+<div id="txt"></div>
+
+<script>
+  function startTime() {
+   const today = new Date();
+   let h = today.getHours();
+   let m = today.getMinutes();
+   let s = today.getSeconds();
+   m = checkTime(m);
+   s = checkTime(s);
+   document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+   setTimeout(startTime, 1000);
+}
+
+  function checkTime(i) {
+   if (i < 10) {i = "0" + i}; 
+   return i;
+}
+</script>
+
+
+<center> 
+   <h1  style="background-color:Lavender;"><font size="6"color="#9c7b9a">  ┊ ˚ ༘♡ MAIN PAGE  ⋆｡˚ ꕥ ┊</h1></font>
+</center>
+
+<p style="background-image: url('prettyphoto.jpg');"> 
+  <center> 
+     <b>
+       <h2> Hi everyone this is my website's let's go through together by click the button below <h2/> 
+     </b>
+     <img src="gif1.gif" alt="gif" style="width:80px;height:80px;">
+  </center> </p>
+
+<div id="mySidebar" class="sidebar">
+  <a href="#" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Biodata.html" target="_blank"> Biodata</a>
+  <a href="Experience.html">Experience</a>
+  <a href="Education.html">Education</a>
+  <a href="Family.html">Family</a>
+  <a href="Gallery.html">Gallery</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<center> 
+  <video width="auto" height="auto" controls >
+    <source src="Mpvid.mp4" type="video/mp4">
+  </video> 
+</center>
+
+<footer>
+     <h2 style="background-color:SteelBlue;"> <font size="4"color="white"><b>  <center> FOLLOW ME </b> </center>  <font size="5">
+ <center>
+    <a href="https://www.instagram.com/_nilahumaira/"><img src= "iglogo.png " style="width:40px; height:40px;"></a>
+    <a href="https://www.tiktok.com/@humaiira3?_t=8rFi9J9JOmw&_r=1"><img src= "TiktokIcon.png " style="width:30px; height:30px;"></a> 
+    <a href="https://x.com/nilahumaira"><img src= "xIcon.png " style="width:50px; height:30px;"></a> </font> 
+ </center> 
+
+<hr size="2" width="100%" color="pink">
+
+<center> <p>  © COPYRIGHT <sup> by </sup>  NILA HUMAIRA BINTI HANIF.</p> </center>
+
+</footer>
+</body>
+</html>
+  
+
